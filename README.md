@@ -1,10 +1,10 @@
 # AgentesMascarilla_IW_Proyecto
 Project IW - Mask detect AI with agents
 
-###project dependencies: 
+### project dependencies: 
 
 JUnit4, Mockito and jade libraries
 
-###output:
+### output:
 
-![Screenshot](screenshot.png)
+![Screenshot](output_IW_project.png)
