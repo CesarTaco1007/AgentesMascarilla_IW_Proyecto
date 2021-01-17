@@ -9,6 +9,7 @@ public class ITemperaturaTest {
 
     @Test
     public void given_two_agents_when_tempOK_then_ok() {
+        System.out.println("Mockito Test 1");
         ITemperatura t = Mockito.mock(ITemperatura.class);
         Mockito.when(t.tempOK()).thenReturn(1);
         assertEquals(1, t.tempOK());
@@ -16,6 +17,7 @@ public class ITemperaturaTest {
 
     @Test
     public void given_two_agents_when_tempF_then_ok() {
+        System.out.println("Mockito Test 2");
         ITemperatura t = Mockito.mock(ITemperatura.class);
         Mockito.when(t.tempF()).thenReturn(0);
         assertEquals(0, t.tempOK());
