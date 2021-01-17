@@ -37,7 +37,7 @@ public class AgenteReceptor extends Agent {
                     System.out.println("NO está puesto mascarilla");
                 }
 
-                if(acl.getConversationId()=="COD001" && usoMascarilla==true && temperatura<37) {
+                if(acl.getConversationId()=="COD001" && usoMascarilla==true && temperatura==37.5) {
                     Imagen instanciaImagen = (Imagen) acl.getContentObject();
                     System.out.println(" PUEDE PASAR --> Recibí la Imagen: " + instanciaImagen.getEtiqueta() + " " + instanciaImagen.getFuente());
                 }else{
@@ -51,11 +51,19 @@ public class AgenteReceptor extends Agent {
 
     public boolean datoQuemado(){
         Random rd = new Random(); // creating Random object
-        return rd.nextBoolean();
+        //return rd.nextBoolean();
+        return true;
+    }
+
+    public boolean datoQuemadoF(){
+        Random rd = new Random(); // creating Random object
+        //return rd.nextBoolean();
+        return false;
     }
 
     public double datoQuemadoTemperatura(){
         Random rd = new Random(); // creating Random object
-        return 34 + (40-34)*rd.nextDouble();
+        //return 34 + (40-34)*rd.nextDouble();
+        return 37.5;
     }
 }
